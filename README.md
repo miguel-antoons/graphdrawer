@@ -1,4 +1,4 @@
-# graphmaker
+# Graphdrawer
 A program allowing to make Composite Structure instance graphs
 
 ## Compile the program
