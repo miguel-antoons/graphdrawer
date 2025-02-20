@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Graph Editor</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="./graph.js"></script>
+        <link rel="stylesheet" href="./graph.css" />
+    </head>
+    <body>
+        <div class="box">
+            <div class="error" id="error"></div>
+            <div class="controls section">
+                <div class="form-check form-switch control">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                        onclick="deleteMode = !deleteMode;"
+                    />
+                    <label
+                        class="form-check-label l"
+                        for="flexSwitchCheckDefault"
+                        >Delete Mode</label
+                    >
+                </div>
+                <div class="control">
+                    <button
+                        class="btn btn-dark fileGen"
+                        onclick="generateFile();"
+                    >
+                        Generate File
+                    </button>
+                </div>
+            </div>
+            <canvas id="graphCanvas"></canvas>
+            <div class="section" id="pliesPerDirection"></div>
+        </div>
+    </body>
+</html>
