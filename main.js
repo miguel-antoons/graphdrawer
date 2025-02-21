@@ -7,6 +7,7 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
+  win.setMenu(null);
   // win.webContents.openDevTools();
 };
 

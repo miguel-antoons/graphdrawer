@@ -19,3 +19,9 @@ Run the following command to run the dev server:
 npm run start
 ```
 
+## Example
+
+Here is an image of what the program looks like.
+
+![Image of the program](./img/Screenshot%20from%202025-02-21%2022-21-51.png)
+
