@@ -134,7 +134,6 @@ class Node {
     this.no0 = 0;
     this.no45 = 0;
     this.no90 = 0;
-    this.isNew = true;
     this.edges = new Set();
     this.selected = false;
     this.assignedIndex = -1;
@@ -312,7 +311,7 @@ function getRoots() {
   let fileContent = "";
   for (let node of nodes) {
     if (node.no0 + node.no45 + node.no90 > 0) {
-      fileContent += `${node.id} `;
+      fileContent += `${node.assignedIndex} `;
     }
   }
   fileContent += "\n";
